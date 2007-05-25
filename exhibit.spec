@@ -1,8 +1,8 @@
 %define	name	exhibit
 %define	version	0.0.1
-%define release %mkrel
+%define release %mkrel 1
 
-%define major 	0
+%define major 0
 %define libname %mklibname %{name} %major
 %define libnamedev %mklibname %{name} %major -d
 
