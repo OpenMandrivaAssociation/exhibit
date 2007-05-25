@@ -1,8 +1,6 @@
 %define	name	exhibit
 %define	version	0.0.1
-%define release 0.%{cvsrel}.1mdk
-
-%define cvsrel 20060323
+%define release %mkrel
 
 %define major 	0
 %define libname %mklibname %{name} %major
@@ -15,12 +13,12 @@ Release: 	%{release}
 License: 	BSD
 Group: 		Graphical desktop/Enlightenment
 URL: 		http://get-e.org/
-Source: 	%{name}-%{cvsrel}.tar.bz2
+Source: 	%{name}-%{version}.tar.bz2
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
-BuildRequires:	evas-devel etk-devel
-BuildRequires:	ecore-devel edje-devel 
-BuildRequires:	epsilon-devel e-devel engrave-devel
-BuildRequires:	edje
+BuildRequires:	evas-devel >= 0.9.9.038, etk-devel >= 0.1.0.003
+BuildRequires:	ecore-devel >= 0.9.9.038, edje-devel >= 0.5.0.038
+BuildRequires:	epsilon-devel >= 0.3.0.008, engrave-devel >= 0.1.0
+BuildRequires:	edje >= 0.5.0.038
 
 %description
 Exhibit is an image viewer powered by the EFL, in particular the new ETK
