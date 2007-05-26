@@ -20,6 +20,7 @@ BuildRequires:	ecore-devel >= 0.9.9.038, edje-devel >= 0.5.0.038
 BuildRequires:	epsilon-devel >= 0.3.0.008, engrave-devel >= 0.1.0
 BuildRequires:	edje >= 0.5.0.038
 BuildRequires:  %{mklibname e0}-devel >= 0.16.999.038
+Buildrequires:  glibc-static-devel
 
 %description
 Exhibit is an image viewer powered by the EFL, in particular the new ETK
