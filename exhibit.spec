@@ -1,6 +1,6 @@
 %define	name	exhibit
 %define	version	0.0.1
-%define release %mkrel 3
+%define release %mkrel 4
 
 %define major 0
 %define libname %mklibname %{name} %major
@@ -15,12 +15,12 @@ Group: 		Graphical desktop/Enlightenment
 URL: 		http://get-e.org/
 Source: 	%{name}-%{version}.tar.bz2
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
-BuildRequires:	evas-devel >= 0.9.9.042, etk-devel >= 0.1.0.042
-BuildRequires:	ecore-devel >= 0.9.9.042, edje-devel >= 0.5.0.042
+BuildRequires:	evas-devel >= 0.9.9.050, etk-devel >= 0.1.0.042
+BuildRequires:	ecore-devel >= 0.9.9.050, edje-devel >= 0.9.9.050
 BuildRequires:	epsilon-devel >= 0.3.0.012, engrave-devel >= 0.1.0
-BuildRequires:	edje >= 0.5.0.042
+BuildRequires:	edje >= 0.9.9.050
 Buildrequires:  flex
-BuildRequires:  e-devel >= 0.16.999.042
+BuildRequires:  e-devel >= 0.16.999.050
 BuildRequires:  efreet-devel
 
 %description
