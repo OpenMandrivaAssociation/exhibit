@@ -15,6 +15,11 @@ Group: 		Graphical desktop/Enlightenment
 URL: 		https://get-e.org/
 Source: 	%{name}-%{version}.tar.bz2
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	evas-devel >= 0.9.9.050, etk-devel >= 0.1.0.042
 BuildRequires:	ecore-devel >= 0.9.9.050, edje-devel >= 0.9.9.050
 BuildRequires:	epsilon-devel >= 0.3.0.012, engrave-devel >= 0.1.0
